@@ -9,7 +9,6 @@ def task1(data):
     print("task1:")
     print(avg)
 
-
 def task2(data):
     male_avg_age = 0
     male_count = 0
@@ -27,7 +26,6 @@ def task2(data):
     print("task2")
     print(male_avg_age)
     print(female_avg_age)
-
 
 def task3(data):
     obesities = []
@@ -48,7 +46,7 @@ def task3(data):
     print(obesities)
     print(diabets)
 
-with open('diabetes_data_upload.csv', newline='') as csvfile:
+with open('diabetes_data_uploadTRUE.csv', newline='') as csvfile:
     data = list(csv.reader(csvfile))
 
 print(data)
