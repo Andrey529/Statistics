@@ -4,7 +4,7 @@ import pandas as pd
 
 def task1(table):
     pandas_check(table)
-    with open('diabetes_data_upload.csv', newline='') as csvfile:
+    with open('diabetes_data_uploadTRUE.csv', newline='') as csvfile:
         data = list(csv.reader(csvfile))
     no_pandas_check(data)
 
@@ -44,6 +44,6 @@ def no_pandas_check(data):
     print("Средний возраст для мужчин (No Pandas):", average_age_male)
     print("Время No Pandas:", end - start)
 
-table = pd.read_csv("diabetes_data_upload.csv")
+table = pd.read_csv("diabetes_data_uploadTRUE.csv")
 task1(table)
 
