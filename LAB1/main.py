@@ -21,7 +21,6 @@ def main():
     ytrain = y[0:trainCount]
     ytest = y[trainCount:n * 2 + 1]
 
-    # TODO(): подписать названия графиков и оси
     # построение гистограмм распределения для всех признаков
     for i in range(0, col):
         _ = plt.hist(class0[:, i], bins='auto', alpha=0.7)  # параметр alpha позволяет задать прозрачность цвета
