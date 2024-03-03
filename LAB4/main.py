@@ -86,6 +86,8 @@ def main():
         for j in range(len(pred)):
             if pred[j] >= 0.5 and y[j] == 1:
                 count_matches += 1
+            elif pred[j] < 0.5 and y[j] == 0:
+                count_matches += 1
         accuracy = count_matches / len(pred)
         accuracies.append(accuracy)
         print("Accuracy:", accuracy)
